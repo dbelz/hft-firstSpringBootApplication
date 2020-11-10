@@ -1,0 +1,59 @@
+danny@zion:~$ http PUT "localhost:8090/todo/This is the first thing you have to do!"
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Length: 40
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 10 Nov 2020 22:30:35 GMT
+Keep-Alive: timeout=60
+
+This is the first thing you have to do!
+
+danny@zion:~$ http PUT "localhost:8090/todo/This is the second thing!"
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Length: 66
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 10 Nov 2020 22:30:45 GMT
+Keep-Alive: timeout=60
+
+This is the first thing you have to do!
+This is the second thing!
+
+danny@zion:~$ http PUT "localhost:8090/todo/And don't forget about this!"
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Length: 95
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 10 Nov 2020 22:30:59 GMT
+Keep-Alive: timeout=60
+
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+
+danny@zion:~$ http PUT "localhost:8090/todo/Bring beer!"
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Length: 107
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 10 Nov 2020 22:31:07 GMT
+Keep-Alive: timeout=60
+
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+Bring beer!
+
+danny@zion:~$ http DELETE "localhost:8090/todo/Bring beer!"
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Length: 95
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 10 Nov 2020 22:31:14 GMT
+Keep-Alive: timeout=60
+
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+
+danny@zion:~$ 

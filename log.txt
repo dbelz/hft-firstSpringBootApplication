@@ -1,0 +1,98 @@
+danny@zion:/media/danny/BIGDATA/SofTec Msc/04_WS20/03_MWT/Ex01_SpringBoot/firstSpringProject$ mvn spring-boot:run
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< me.belz:firstSpringProject >---------------------
+[INFO] Building firstSpringProject 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) > test-compile @ firstSpringProject >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ firstSpringProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ firstSpringProject ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ firstSpringProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /media/danny/BIGDATA/SofTec Msc/04_WS20/03_MWT/Ex01_SpringBoot/firstSpringProject/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ firstSpringProject ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) < test-compile @ firstSpringProject <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) @ firstSpringProject ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-10 23:30:27.273  INFO 26250 --- [           main] m.b.f.FirstSpringProjectApplication      : Starting FirstSpringProjectApplication on zion with PID 26250 (/media/danny/BIGDATA/SofTec Msc/04_WS20/03_MWT/Ex01_SpringBoot/firstSpringProject/target/classes started by danny in /media/danny/BIGDATA/SofTec Msc/04_WS20/03_MWT/Ex01_SpringBoot/firstSpringProject)
+2020-11-10 23:30:27.274 DEBUG 26250 --- [           main] m.b.f.FirstSpringProjectApplication      : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-10 23:30:27.275  INFO 26250 --- [           main] m.b.f.FirstSpringProjectApplication      : No active profile set, falling back to default profiles: default
+2020-11-10 23:30:28.033  INFO 26250 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-10 23:30:28.040  INFO 26250 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-10 23:30:28.041  INFO 26250 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-10 23:30:28.085  INFO 26250 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-10 23:30:28.085  INFO 26250 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2020-11-10 23:30:28.336  INFO 26250 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 23:30:28.515  INFO 26250 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2020-11-10 23:30:28.547  INFO 26250 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-11-10 23:30:28.558  INFO 26250 --- [           main] m.b.f.FirstSpringProjectApplication      : Started FirstSpringProjectApplication in 1.572 seconds (JVM running for 1.792)
+2020-11-10 23:30:35.890  INFO 26250 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 23:30:35.890  INFO 26250 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-10 23:30:35.894  INFO 26250 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-10 23:30:35.914  INFO 26250 --- [nio-8090-exec-1] m.b.f.FirstSpringProjectApplication      : addTodo('This is the first thing you have to do!') - BEGIN
+2020-11-10 23:30:35.914  INFO 26250 --- [nio-8090-exec-1] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - BEGIN
+2020-11-10 23:30:35.914 DEBUG 26250 --- [nio-8090-exec-1] m.b.f.FirstSpringProjectApplication      : Current todos:
+This is the first thing you have to do!
+
+2020-11-10 23:30:35.914  INFO 26250 --- [nio-8090-exec-1] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - END
+2020-11-10 23:30:35.914  INFO 26250 --- [nio-8090-exec-1] m.b.f.FirstSpringProjectApplication      : addTodo('This is the first thing you have to do!') - END
+2020-11-10 23:30:45.930  INFO 26250 --- [nio-8090-exec-2] m.b.f.FirstSpringProjectApplication      : addTodo('This is the second thing!') - BEGIN
+2020-11-10 23:30:45.930  INFO 26250 --- [nio-8090-exec-2] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - BEGIN
+2020-11-10 23:30:45.930 DEBUG 26250 --- [nio-8090-exec-2] m.b.f.FirstSpringProjectApplication      : Current todos:
+This is the first thing you have to do!
+This is the second thing!
+
+2020-11-10 23:30:45.930  INFO 26250 --- [nio-8090-exec-2] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - END
+2020-11-10 23:30:45.930  INFO 26250 --- [nio-8090-exec-2] m.b.f.FirstSpringProjectApplication      : addTodo('This is the second thing!') - END
+2020-11-10 23:30:59.196  INFO 26250 --- [nio-8090-exec-4] m.b.f.FirstSpringProjectApplication      : addTodo('And don't forget about this!') - BEGIN
+2020-11-10 23:30:59.196  INFO 26250 --- [nio-8090-exec-4] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - BEGIN
+2020-11-10 23:30:59.196 DEBUG 26250 --- [nio-8090-exec-4] m.b.f.FirstSpringProjectApplication      : Current todos:
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+
+2020-11-10 23:30:59.196  INFO 26250 --- [nio-8090-exec-4] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - END
+2020-11-10 23:30:59.196  INFO 26250 --- [nio-8090-exec-4] m.b.f.FirstSpringProjectApplication      : addTodo('And don't forget about this!') - END
+2020-11-10 23:31:07.724  INFO 26250 --- [nio-8090-exec-6] m.b.f.FirstSpringProjectApplication      : addTodo('Bring beer!') - BEGIN
+2020-11-10 23:31:07.724  INFO 26250 --- [nio-8090-exec-6] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - BEGIN
+2020-11-10 23:31:07.724 DEBUG 26250 --- [nio-8090-exec-6] m.b.f.FirstSpringProjectApplication      : Current todos:
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+Bring beer!
+
+2020-11-10 23:31:07.724  INFO 26250 --- [nio-8090-exec-6] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - END
+2020-11-10 23:31:07.724  INFO 26250 --- [nio-8090-exec-6] m.b.f.FirstSpringProjectApplication      : addTodo('Bring beer!') - END
+2020-11-10 23:31:14.276  INFO 26250 --- [nio-8090-exec-8] m.b.f.FirstSpringProjectApplication      : removeTodo('Bring beer!') - BEGIN
+2020-11-10 23:31:14.276  INFO 26250 --- [nio-8090-exec-8] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - BEGIN
+2020-11-10 23:31:14.276 DEBUG 26250 --- [nio-8090-exec-8] m.b.f.FirstSpringProjectApplication      : Current todos:
+This is the first thing you have to do!
+This is the second thing!
+And don't forget about this!
+
+2020-11-10 23:31:14.276  INFO 26250 --- [nio-8090-exec-8] m.b.f.FirstSpringProjectApplication      : buildTodoListString() - END
+2020-11-10 23:31:14.276  INFO 26250 --- [nio-8090-exec-8] m.b.f.FirstSpringProjectApplication      : removeTodo('Bring beer!') - END
+
+
